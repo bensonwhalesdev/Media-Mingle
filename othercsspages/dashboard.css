@@ -1,21 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
 }
-:root{
+:root {
     --green: rgb(26, 233, 26);
     --white: #fff;
 }
-.logo{
-    width: 60px;
+body {
+    font-family: 'Poppins', sans-serif;
 }
-header{
+.logo {
+    width: 60px;
+    cursor: pointer;
+}
+header {
     background-color: var(--green);
     position: relative;
 }
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -23,22 +27,26 @@ nav{
     padding: 10px;
     align-items: center;
 }
-.nav-list{
+.nav-list {
     display: flex;
     gap: 1em;
     color: black;
     font-size: 1.5em;
 }
-.fa-house{
+.nav-list li:hover{
+    color: var(--white);
+    border-bottom: 4px solid var(--white);
+}
+.fa-house {
     font-size: 0.7em;
 }
-.fa-user{
+.fa-user {
     font-size: 0.7em;
 }
-.fa-message{
+.fa-message {
     font-size: 0.7em;
 }
-button{
+button {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -46,11 +54,16 @@ button{
     color: black;
     font-size: 1.3em;
 }
-.fa-bars{
+button:hover {
+    background-color: var(--green);
+    color: var(--white);
+    border: 2px solid #fff;
+}
+.fa-bars {
     font-size: 1.6em;
     display: none !important;
 }
-.second-nav-list{
+.second-nav-list {
     position: absolute;
     border: 2px solid var(--green);
     width: 530px;
@@ -61,38 +74,44 @@ button{
     background-color: var(--white);
     border-radius: 10px;
     display: none;
+    z-index: 2;
 }
-.fa-xmark{
+.fa-xmark {
     font-size: 1.8em;
 }
-.right-list1 button{
+.right-list1 button {
     padding: 5px 15px;
     background-color: var(--green);
     color: var(--white);
 }
-.hero-cards{
+.right-list1 button:hover {
+    background-color: var(--white);
+    color: var(--green);
+    border: 2px solid var(--green);
+}
+.hero-cards {
     padding: 10px;
     margin-top: 20px;
     display: flex;
     gap: 1em;
 }
-.pic-card{
+.pic-card {
     border: 2px solid var(--green);
     border-radius: 10px;
     text-align: center;
 }
-.pic-card p{
+.pic-card p {
     margin-top: 10px;
     font-size: 1.2em;
 }
-.pic-card img{
+.pic-card img {
     border-radius: 10px;
 }
-.fa-star{
+.fa-star {
     font-size: 1.5em;
     color: yellow;
 }
-.fa-heart{
+.fa-heart {
     font-size: 1.5em;
     color: red;
 }
@@ -110,60 +129,70 @@ button{
 
 /* media query */
 
-@media(max-width:665px){
-    .nav-list{
+@media(max-width:665px) {
+    .nav-list {
         display: none;
     }
-    .right-list{
+
+    .right-list {
         display: none;
     }
-    .fa-bars{
+
+    .fa-bars {
         display: block !important;
     }
 }
-@media(max-width:634px){
-    .second-nav-list{
+
+@media(max-width:634px) {
+    .second-nav-list {
         width: 495px;
     }
 }
-@media(max-width:587px){
-    .second-nav-list{
+
+@media(max-width:587px) {
+    .second-nav-list {
         width: 480px;
         left: 60px;
     }
 }
-@media(max-width:560px){
-    .second-nav-list{
+
+@media(max-width:560px) {
+    .second-nav-list {
         width: 435px;
         left: 60px;
     }
 }
-@media(max-width:500px){
-    .second-nav-list{
+
+@media(max-width:500px) {
+    .second-nav-list {
         width: 385px;
         left: 55px;
     }
 }
-@media(max-width:458px){
-    .second-nav-list{
+
+@media(max-width:458px) {
+    .second-nav-list {
         width: 360px;
         left: 50px;
     }
 }
-@media(max-width:419px){
-    .second-nav-list{
+
+@media(max-width:419px) {
+    .second-nav-list {
         width: 325px;
         left: 45px;
     }
 }
-@media(max-width:378px){
-    .second-nav-list{
+
+@media(max-width:378px) {
+    .second-nav-list {
         width: 295px;
         left: 40px;
     }
 }
-@media(max-width:343px){
-    .second-nav-list{
+
+@media(max-width:343px) {
+    .second-nav-list {
         width: 270px;
         left: 35px;
     }

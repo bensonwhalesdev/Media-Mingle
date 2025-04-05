@@ -1,4 +1,5 @@
 let getUserdetails = [];
+let user = '';
 
 function loginPage() {
     signuppage.style.display = 'none';
@@ -12,7 +13,7 @@ function showSignup() {
 
 function signUp() {
 
-    let user = {
+    user = {
         firstname: firstname.value,
         lastname: lastname.value,
         email: email.value,
