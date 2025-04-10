@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green: rgb(26, 233, 26);
+}
+body{
+    background-image: url(./images/background.jpg);
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    gap: 2em;
+    margin: 80px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.left-side-text{
+    margin-top: 80px;
+}
+.left-side-text h1{
+    color: var(--green) ;
+    margin-bottom: 20px;
+}
+.left-side-text span{
+    color: var(--green) ;
+}
+.wrap {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--green);
+}
+.wrap2{
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--green);
+    display: none;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+input {
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+label {
+    text-align: center;
+}
+
+.signupbtn {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: black;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+.signupbtn:hover{
+    background-color: var(--green);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.loginbtn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: black;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+.loginbtn:hover{
+    background-color: var(--green);
+    color: #fff;
+    border: 2px solid #fff;
+}
+.loginpagebtn{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: black;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;  
+}
+.loginpagebtn:hover{
+    background-color: var(--green);
+    color: #fff;
+    border: 2px solid #fff;
+}
+.loginpagebtn2{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: black;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+.loginpagebtn2:hover{
+    background-color: var(--green);
+    color: #fff;
+    border: 2px solid #fff;
+}
+.fa-eye{
+    position: absolute;
+    top: 165px;
+    left: 340px;
+}
+.password-guide{
+    font-size: 0.7em;
+}
+
+/* media query */
+@media(max-width:889px){
+    .container{
+        margin: 10px auto;
+    }
+}
+@media(max-width:488px){
+    .left-side-text{
+        width: 300px;
+        margin-top: 20px;
+    }
+    .wrap{
+        width: 300px;
+    }
+    .wrap2{
+        width: 300px;
+    }
+    .fa-eye{
+        left: 235px;
+    }
+    .fa-xmark{
+        left: 235px;
+    }
+
+    
+}

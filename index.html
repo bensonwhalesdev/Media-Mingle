@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-Mingle | Sign-up/Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .fa-xmark{
+    position: absolute;
+    top: 165px;
+    left: 340px;
+    display: none;
+}
+</style>
+<body>
+
+    <div class="container">
+
+        <!-- Text and signup container -->
+        <div class="left-side-text">
+            <h1>Media-Mingle</h1>
+            <span>Media-Mingle helps you connect and share with the people in your life.</span>
+        </div>
+
+        <div class="wrap" id="signuppage">
+
+            <div class="form">
+                <span>Sign Up</span>
+                <input type="text" name="" id="firstname" placeholder="Firstname" required>
+                <input type="text" name="" id="lastname" placeholder="Lastname" required>
+                <input type="email" name="" id="email" placeholder="Email Address" required>
+                <input type="password" name="" id="password" placeholder="Password" required>
+                <i class="fa-solid fa-eye" onclick="showPassword()" id="eye"></i>
+                <i class="fa-solid fa-xmark" id="close" onclick="hidePassword()"></i>
+                <span class="password-guide">Password must contain atleast one Upper case, one special character and one number</span>
+                <input type="password" name="" id="confirmpassword" placeholder="Confirm password">
+
+                <button class="signupbtn" onclick="signUp()">Sign Up</button>
+                <label for="">
+                    Already have an account?
+                    <button class="loginbtn" onclick="loginPage()">Login</button>
+                </label>
+            </div>
+        </div>
+        <!-- login container -->
+        <div class="wrap2" id="loginpage">
+            <div class="form">
+                <span>Login</span>
+                <input type="email" name="" id="useremail" placeholder="Email Address">
+                <input type="password" name="" id="userpassword" placeholder="Password">
+                <button class="loginpagebtn" onclick="loginBtn()">Login</button>
+                <label for="">
+                    Create new account?
+                    <button class="loginpagebtn2" onclick="showSignup()">Sign Up</button>
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
